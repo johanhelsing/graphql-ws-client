@@ -29,10 +29,16 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 thiserror = "1.0"
 uuid = { version = "0.8", features = ["v4"] }
+pin-project-lite = "0.2.7"
+pharos = { version = "0.5.2" }
 
 cynic = { version = "1.0", optional = true }
+# cynic = { version = "0.14", git = "https://github.com/Yatekii/cynic.git", optional = true, features = ["web"] }
+# cynic = { version = "1.0.0", path = "../cynic/cynic", optional = true, features = ["web"] }
 async-tungstenite = { version = "0.16", optional = true }
 graphql_client = { version = "0.10.0", optional = true }
+
+ws_stream_wasm = { version = "0.7", optional = true }
 
 [dev-dependencies]
 insta = "1.11"
