@@ -18,6 +18,8 @@ members = ["examples"]
 
 [features]
 default = ["async-tungstenite"]
+client-cynic = ["async-tungstenite", "cynic"]
+client-graphql-client = ["async-tungstenite", "graphql_client"]
 ws_stream_wasm = ["dep:ws_stream_wasm", "uuid/js", "no-logging"]
 no-logging = []
 
@@ -33,8 +35,6 @@ pin-project-lite = "0.2.7"
 pharos = { version = "0.5.2" }
 
 cynic = { version = "1.0", optional = true }
-# cynic = { version = "0.14", git = "https://github.com/Yatekii/cynic.git", optional = true, features = ["web"] }
-# cynic = { version = "1.0.0", path = "../cynic/cynic", optional = true, features = ["web"] }
 async-tungstenite = { version = "0.16", optional = true }
 graphql_client = { version = "0.10.0", optional = true }
 
